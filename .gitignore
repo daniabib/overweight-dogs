@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# IPython notebook
+.ipynb_checkpoints
+
+# Repo scratch directory
+scratch/
+
+# PyTest
+.pytest_cache
+
+# Misc
+.DS_Store
+docker-compose.yml
+docker-compose.override.yml
+
+# Dataset
+model/data/ 

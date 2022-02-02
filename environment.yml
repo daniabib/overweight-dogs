@@ -1,0 +1,14 @@
+name: overweight
+dependencies:
+  - python==3.8
+  - gunicorn
+  - uvicorn
+  - fastapi
+  - pandas
+  - numpy
+  - scikit-learn
+  - jieba
+  - pytest
+  - pytest-html
+  - pytorch
+  - torchvision
