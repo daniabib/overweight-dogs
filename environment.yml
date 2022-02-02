@@ -4,6 +4,7 @@ dependencies:
   - gunicorn
   - uvicorn
   - fastapi
+  - pydantic
   - pandas
   - numpy
   - scikit-learn
@@ -12,3 +13,5 @@ dependencies:
   - pytest-html
   - pytorch
   - torchvision
+  - torchsummary
+  - efficientnet_pytorch
