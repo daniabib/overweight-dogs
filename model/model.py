@@ -25,3 +25,10 @@ def build_efficientnet(version: int = 0):
 
     return model
 
+
+if __name__ == "__main__":
+    model = build_efficientnet()
+    # Print model's state_dict
+    print("Model's state_dict:")
+    for param_tensor in model.state_dict():
+        print(param_tensor, "\t", model.state_dict()[param_tensor].size())
