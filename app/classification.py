@@ -1,12 +1,15 @@
 import io
 from PIL import Image
 
+from fastapi import UploadFile
+
 import torch
 import torchvision.transforms as T
 from torchsummary import summary
 
 
 from app.config import CONFIG
+from app.models import PredictionOutput
 from model.model import build_efficientnet
 
 CLASS_NAMES = ["fit", "overweight"]
@@ -30,7 +33,7 @@ def transform_image(raw_image):
     return transforms(image).unsqueeze(0)
 
 
-def get_classification(model, raw_image):
+def get_classification(model, raw_image: UploadFile) -> PredictionOutput:
     image_tensor = transform_image(raw_image)
     print("Image tensor:", image_tensor.shape)
 
@@ -38,4 +41,5 @@ def get_classification(model, raw_image):
     print("Output: ", output)
     predicted_class = torch.max(output, 1).indices.item()
     print("Predicted class:", predicted_class)
-    return CLASS_NAMES[predicted_class]
+    category = CLASS_NAMES[predicted_class]
+    return PredictionOutput(category=category)

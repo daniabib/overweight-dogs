@@ -1,9 +1,10 @@
 import io
 
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, Depends
 from fastapi.logger import logger
 from app.config import CONFIG
 from app.classification import get_model, transform_image, get_classification
+from app.models import PredictionOutput
 
 app = FastAPI()
 
@@ -22,8 +23,15 @@ async def startup_event():
     }
 
 @app.post("/predict")
-async def get_image_prediction(image: UploadFile):
+async def get_image_prediction(image: UploadFile) -> PredictionOutput:
     prediction = get_classification(app.package["model"], image.file.read())
     print(prediction)
     if image:
-        return {"predicted_class": prediction}
+        return prediction
+
+
+# @app.post("/prediction")
+# async def prediction(
+#     output: PredictionOutput = Depends(get_classification)
+# ) -> PredictionOutput:
+#     return output
