@@ -2,9 +2,8 @@ import io
 
 from fastapi import FastAPI, File, UploadFile
 from fastapi.logger import logger
-import torch
 from app.config import CONFIG
-from app.classification import get_model, transform_image
+from app.classification import get_model, transform_image, get_classification
 
 app = FastAPI()
 
@@ -17,10 +16,14 @@ async def startup_event():
 
     model = get_model()
 
+    # add model to app state
+    app.package = {
+        "model": model
+    }
 
 @app.post("/predict")
 async def get_image_prediction(image: UploadFile):
-    transformed_image = transform_image(image.file.read())
-
+    prediction = get_classification(app.package["model"], image.file.read())
+    print(prediction)
     if image:
-        return {"image_type": "get image"}
+        return {"predicted_class": prediction}
