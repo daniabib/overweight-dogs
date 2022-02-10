@@ -1,7 +1,7 @@
 import torch.nn as nn
 from efficientnet_pytorch import EfficientNet
 
-def build_efficientnet(version: int = 0):
+def build_efficientnet(version: int = 0) -> EfficientNet:
     model = EfficientNet.from_pretrained(f"efficientnet-b{version}")
 
     # Freeze weights
