@@ -1,0 +1,11 @@
+gunicorn
+uvicorn
+fastapi
+pydantic
+pandas
+numpy
+torch
+torchvision
+torchsummary
+efficientnet_pytorch
+python-multipart

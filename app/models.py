@@ -12,6 +12,10 @@ from app.config import CONFIG
 from model.model import build_efficientnet
 
 
+class PredictionInput(BaseModel):
+    raw_image: UploadFile
+
+
 class PredictionOutput(BaseModel):
     category: str
 
@@ -43,7 +47,7 @@ class EfficientNetClassifier:
         self.model.eval()
 
     def get_classification(self, raw_image: UploadFile) -> PredictionOutput:
-        image_tensor = self.transform_image(raw_image)
+        image_tensor = self.transform_image(raw_image.file.read())
 
         output = self.model(image_tensor)
         print("Output: ", output)
@@ -53,5 +57,3 @@ class EfficientNetClassifier:
         return PredictionOutput(category=category)
 
 # TODO: Implement PredictionInput and Outout model
-# class PredictionInput(BaseModel):
-#     raw_image: bytes
