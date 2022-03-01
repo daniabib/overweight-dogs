@@ -55,5 +55,3 @@ class EfficientNetClassifier:
         print("Predicted class:", predicted_class)
         category = self.targets[predicted_class]
         return PredictionOutput(category=category)
-
-# TODO: Implement PredictionInput and Outout model

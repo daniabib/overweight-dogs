@@ -26,14 +26,6 @@ async def startup_event():
     }
 
 
-# @app.post("/prediction")
-# async def get_image_prediction(image: UploadFile) -> PredictionOutput:
-#     # prediction = app.package["model"].get_classification(image.file.read())
-#     # prediction = model.get_classification(image.file.read())
-#     prediction = model.get_classification(image)
-#     print(prediction)
-#     if image:
-#         return prediction
 async def get_classification(raw_image: UploadFile) -> PredictionOutput:
     image_tensor = model.transform_image(raw_image.file.read())
 
@@ -43,8 +35,6 @@ async def get_classification(raw_image: UploadFile) -> PredictionOutput:
     print("Predicted class:", predicted_class)
     category = model.targets[predicted_class]
     return PredictionOutput(category=category)
-
-# TODO: Implement /prediction as dependency injection
 
 
 @app.post("/prediction")
