@@ -1,13 +1,20 @@
-from fastapi import FastAPI, File, UploadFile, Depends
+from fastapi import FastAPI, UploadFile, Depends
 from fastapi.logger import logger
+from fastapi.exceptions import RequestValidationError
+
 from app.config import CONFIG
 from app.models import EfficientNetClassifier, PredictionOutput
+from app.exception_handler import validation_exception_handler, python_exception_handler
+
 import torch
 
 
 CLASS_NAMES = ["fit", "overweight"]
 
 app = FastAPI()
+
+app.add_exception_handler(RequestValidationError, validation_exception_handler)
+app.add_exception_handler(Exception, python_exception_handler)
 
 model = EfficientNetClassifier(targets=CLASS_NAMES)
 
