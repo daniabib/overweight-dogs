@@ -1,0 +1,8 @@
+[2022-03-03 20:41:08,046] INFO [18799-140511895484224] Will watch for changes in these directories: ['/home/dalai/repos/overweight-dogs']
+[2022-03-03 20:41:08,046] INFO [18799-140511895484224] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2022-03-03 20:41:08,046] INFO [18799-140511895484224] Started reloader process [18799] using statreload
+[2022-03-03 20:41:11,181] INFO [18801-139930371745600] Started server process [18801]
+[2022-03-03 20:41:11,181] INFO [18801-139930371745600] Waiting for application startup.
+[2022-03-03 20:41:11,181] INFO [18801-139930371745600] Running envirnoment: development
+[2022-03-03 20:41:11,182] INFO [18801-139930371745600] PyTorch using device: cuda
+[2022-03-03 20:41:20,110] INFO [18801-139930371745600] Application startup complete.

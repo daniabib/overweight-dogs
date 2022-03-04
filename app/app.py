@@ -1,11 +1,22 @@
-import io
-
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, UploadFile, Depends
 from fastapi.logger import logger
+from fastapi.exceptions import RequestValidationError
+
 from app.config import CONFIG
-from app.classification import get_model, transform_image, get_classification
+from app.models import EfficientNetClassifier, PredictionOutput
+from app.exception_handler import validation_exception_handler, python_exception_handler
+
+import torch
+
+
+CLASS_NAMES = ["fit", "overweight"]
 
 app = FastAPI()
+
+app.add_exception_handler(RequestValidationError, validation_exception_handler)
+app.add_exception_handler(Exception, python_exception_handler)
+
+model = EfficientNetClassifier(targets=CLASS_NAMES)
 
 
 @app.on_event("startup")
@@ -14,16 +25,27 @@ async def startup_event():
     logger.info('Running envirnoment: {}'.format(CONFIG['ENV']))
     logger.info('PyTorch using device: {}'.format(CONFIG['DEVICE']))
 
-    model = get_model()
+    model.load_model()
 
     # add model to app state
     app.package = {
         "model": model
     }
 
-@app.post("/predict")
-async def get_image_prediction(image: UploadFile):
-    prediction = get_classification(app.package["model"], image.file.read())
-    print(prediction)
-    if image:
-        return {"predicted_class": prediction}
+
+async def get_classification(raw_image: UploadFile) -> PredictionOutput:
+    image_tensor = model.transform_image(raw_image.file.read())
+
+    output = model.model(image_tensor)
+    print("Output: ", output)
+    predicted_class = torch.max(output, 1).indices.item()
+    print("Predicted class:", predicted_class)
+    category = model.targets[predicted_class]
+    return PredictionOutput(category=category)
+
+
+@app.post("/prediction")
+async def prediction(
+    output: PredictionOutput = Depends(get_classification)
+) -> PredictionOutput:
+    return output
