@@ -9,3 +9,4 @@ torchvision
 torchsummary
 efficientnet_pytorch
 python-multipart
+requests_toolbelt

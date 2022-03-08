@@ -6,3 +6,349 @@
 [2022-03-03 20:41:11,181] INFO [18801-139930371745600] Running envirnoment: development
 [2022-03-03 20:41:11,182] INFO [18801-139930371745600] PyTorch using device: cuda
 [2022-03-03 20:41:20,110] INFO [18801-139930371745600] Application startup complete.
+[2022-03-04 18:33:21,172] INFO [49013-139761149351744] Will watch for changes in these directories: ['/home/dalai/repos/overweight-dogs']
+[2022-03-04 18:33:21,172] INFO [49013-139761149351744] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2022-03-04 18:33:21,173] INFO [49013-139761149351744] Started reloader process [49013] using statreload
+[2022-03-04 18:33:22,088] INFO [49015-139911293642560] Started server process [49015]
+[2022-03-04 18:33:22,088] INFO [49015-139911293642560] Waiting for application startup.
+[2022-03-04 18:33:22,088] INFO [49015-139911293642560] Running envirnoment: development
+[2022-03-04 18:33:22,088] INFO [49015-139911293642560] PyTorch using device: cuda
+[2022-03-04 18:33:24,130] INFO [49015-139911293642560] Application startup complete.
+[2022-03-04 18:33:34,172] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/up_test.py'. Reloading...
+[2022-03-04 18:33:34,266] INFO [49015-139911293642560] Shutting down
+[2022-03-04 18:33:34,367] INFO [49015-139911293642560] Waiting for application shutdown.
+[2022-03-04 18:33:34,367] INFO [49015-139911293642560] Application shutdown complete.
+[2022-03-04 18:33:34,368] INFO [49015-139911293642560] Finished server process [49015]
+[2022-03-04 18:33:35,954] INFO [49085-139651259467584] Started server process [49085]
+[2022-03-04 18:33:35,955] INFO [49085-139651259467584] Waiting for application startup.
+[2022-03-04 18:33:35,955] INFO [49085-139651259467584] Running envirnoment: development
+[2022-03-04 18:33:35,955] INFO [49085-139651259467584] PyTorch using device: cuda
+[2022-03-04 18:33:38,021] INFO [49085-139651259467584] Application startup complete.
+[2022-03-04 18:33:44,682] INFO [49085-139651259467584] 127.0.0.1:54114 - "GET /docs HTTP/1.1" 200
+[2022-03-04 18:33:45,036] INFO [49085-139651259467584] 127.0.0.1:54114 - "GET /openapi.json HTTP/1.1" 200
+[2022-03-04 18:34:08,512] INFO [49085-139651259467584] 127.0.0.1:54116 - "POST /prediction HTTP/1.1" 200
+[2022-03-04 18:35:33,833] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/test_api.py'. Reloading...
+[2022-03-04 18:35:33,911] INFO [49085-139651259467584] Shutting down
+[2022-03-04 18:35:34,012] INFO [49085-139651259467584] Waiting for application shutdown.
+[2022-03-04 18:35:34,013] INFO [49085-139651259467584] Application shutdown complete.
+[2022-03-04 18:35:34,013] INFO [49085-139651259467584] Finished server process [49085]
+[2022-03-04 18:35:35,228] INFO [49384-139681312573248] Started server process [49384]
+[2022-03-04 18:35:35,228] INFO [49384-139681312573248] Waiting for application startup.
+[2022-03-04 18:35:35,228] INFO [49384-139681312573248] Running envirnoment: development
+[2022-03-04 18:35:35,228] INFO [49384-139681312573248] PyTorch using device: cuda
+[2022-03-04 18:35:37,157] INFO [49384-139681312573248] Application startup complete.
+[2022-03-04 18:36:28,618] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-04 18:36:28,643] INFO [49384-139681312573248] Shutting down
+[2022-03-04 18:36:28,744] INFO [49384-139681312573248] Waiting for application shutdown.
+[2022-03-04 18:36:28,744] INFO [49384-139681312573248] Application shutdown complete.
+[2022-03-04 18:36:28,745] INFO [49384-139681312573248] Finished server process [49384]
+[2022-03-04 18:36:33,496] INFO [49672-139935494965056] Started server process [49672]
+[2022-03-04 18:36:33,496] INFO [49672-139935494965056] Waiting for application startup.
+[2022-03-04 18:36:33,496] INFO [49672-139935494965056] Running envirnoment: development
+[2022-03-04 18:36:33,496] INFO [49672-139935494965056] PyTorch using device: cuda
+[2022-03-04 18:36:41,415] INFO [49672-139935494965056] Application startup complete.
+[2022-03-04 18:37:19,492] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-04 18:37:19,545] INFO [49672-139935494965056] Shutting down
+[2022-03-04 18:37:19,646] INFO [49672-139935494965056] Waiting for application shutdown.
+[2022-03-04 18:37:19,647] INFO [49672-139935494965056] Application shutdown complete.
+[2022-03-04 18:37:19,647] INFO [49672-139935494965056] Finished server process [49672]
+[2022-03-04 18:37:20,843] INFO [49912-140306834622272] Started server process [49912]
+[2022-03-04 18:37:20,843] INFO [49912-140306834622272] Waiting for application startup.
+[2022-03-04 18:37:20,843] INFO [49912-140306834622272] Running envirnoment: development
+[2022-03-04 18:37:20,843] INFO [49912-140306834622272] PyTorch using device: cuda
+[2022-03-04 18:37:22,819] INFO [49912-140306834622272] Application startup complete.
+[2022-03-04 18:37:54,560] INFO [49912-140306834622272] 127.0.0.1:54118 - "POST /prediction HTTP/1.1" 200
+[2022-03-04 18:38:18,329] INFO [49912-140306834622272] 127.0.0.1:54120 - "POST /prediction HTTP/1.1" 200
+[2022-03-04 18:38:47,653] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-04 18:38:47,747] INFO [49912-140306834622272] Shutting down
+[2022-03-04 18:38:47,848] INFO [49912-140306834622272] Waiting for application shutdown.
+[2022-03-04 18:38:47,848] INFO [49912-140306834622272] Application shutdown complete.
+[2022-03-04 18:38:47,848] INFO [49912-140306834622272] Finished server process [49912]
+[2022-03-04 18:38:49,098] INFO [50150-140593994086208] Started server process [50150]
+[2022-03-04 18:38:49,098] INFO [50150-140593994086208] Waiting for application startup.
+[2022-03-04 18:38:49,099] INFO [50150-140593994086208] Running envirnoment: development
+[2022-03-04 18:38:49,099] INFO [50150-140593994086208] PyTorch using device: cuda
+[2022-03-04 18:38:51,091] INFO [50150-140593994086208] Application startup complete.
+[2022-03-04 18:38:51,127] INFO [50150-140593994086208] 127.0.0.1:54122 - "POST /prediction HTTP/1.1" 422
+[2022-03-04 18:41:11,669] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/test_api.py'. Reloading...
+[2022-03-04 18:41:11,689] INFO [50150-140593994086208] Shutting down
+[2022-03-04 18:41:11,790] INFO [50150-140593994086208] Waiting for application shutdown.
+[2022-03-04 18:41:11,790] INFO [50150-140593994086208] Application shutdown complete.
+[2022-03-04 18:41:11,791] INFO [50150-140593994086208] Finished server process [50150]
+[2022-03-04 18:41:13,161] INFO [50290-140346627102528] Started server process [50290]
+[2022-03-04 18:41:13,161] INFO [50290-140346627102528] Waiting for application startup.
+[2022-03-04 18:41:13,161] INFO [50290-140346627102528] Running envirnoment: development
+[2022-03-04 18:41:13,161] INFO [50290-140346627102528] PyTorch using device: cuda
+[2022-03-04 18:41:15,584] INFO [50290-140346627102528] Application startup complete.
+[2022-03-04 19:06:01,726] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-04 19:06:01,813] INFO [50290-140346627102528] Shutting down
+[2022-03-04 19:06:01,914] INFO [50290-140346627102528] Waiting for application shutdown.
+[2022-03-04 19:06:01,914] INFO [50290-140346627102528] Application shutdown complete.
+[2022-03-04 19:06:01,915] INFO [50290-140346627102528] Finished server process [50290]
+[2022-03-04 19:06:06,490] INFO [54591-140192924231488] Started server process [54591]
+[2022-03-04 19:06:06,490] INFO [54591-140192924231488] Waiting for application startup.
+[2022-03-04 19:06:06,490] INFO [54591-140192924231488] Running envirnoment: development
+[2022-03-04 19:06:06,490] INFO [54591-140192924231488] PyTorch using device: cuda
+[2022-03-04 19:06:14,417] INFO [54591-140192924231488] Application startup complete.
+[2022-03-04 19:06:20,577] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-04 19:06:20,638] INFO [54591-140192924231488] Shutting down
+[2022-03-04 19:06:20,739] INFO [54591-140192924231488] Waiting for application shutdown.
+[2022-03-04 19:06:20,740] INFO [54591-140192924231488] Application shutdown complete.
+[2022-03-04 19:06:20,740] INFO [54591-140192924231488] Finished server process [54591]
+[2022-03-04 19:06:21,940] INFO [54674-139674119505728] Started server process [54674]
+[2022-03-04 19:06:21,940] INFO [54674-139674119505728] Waiting for application startup.
+[2022-03-04 19:06:21,940] INFO [54674-139674119505728] Running envirnoment: development
+[2022-03-04 19:06:21,940] INFO [54674-139674119505728] PyTorch using device: cuda
+[2022-03-04 19:06:23,874] INFO [54674-139674119505728] Application startup complete.
+[2022-03-04 19:06:45,583] INFO [54674-139674119505728] 127.0.0.1:54126 - "POST /prediction HTTP/1.1" 422
+[2022-03-04 19:07:21,524] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-04 19:07:21,580] INFO [54674-139674119505728] Shutting down
+[2022-03-04 19:07:21,680] INFO [54674-139674119505728] Waiting for application shutdown.
+[2022-03-04 19:07:21,681] INFO [54674-139674119505728] Application shutdown complete.
+[2022-03-04 19:07:21,681] INFO [54674-139674119505728] Finished server process [54674]
+[2022-03-04 19:07:22,880] INFO [54838-139776447772480] Started server process [54838]
+[2022-03-04 19:07:22,880] INFO [54838-139776447772480] Waiting for application startup.
+[2022-03-04 19:07:22,880] INFO [54838-139776447772480] Running envirnoment: development
+[2022-03-04 19:07:22,880] INFO [54838-139776447772480] PyTorch using device: cuda
+[2022-03-04 19:07:24,865] INFO [54838-139776447772480] Application startup complete.
+[2022-03-04 19:07:51,659] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-04 19:07:51,758] INFO [54838-139776447772480] Shutting down
+[2022-03-04 19:07:51,859] INFO [54838-139776447772480] Waiting for application shutdown.
+[2022-03-04 19:07:51,859] INFO [54838-139776447772480] Application shutdown complete.
+[2022-03-04 19:07:51,859] INFO [54838-139776447772480] Finished server process [54838]
+[2022-03-04 19:07:53,059] INFO [54919-140515706677056] Started server process [54919]
+[2022-03-04 19:07:53,059] INFO [54919-140515706677056] Waiting for application startup.
+[2022-03-04 19:07:53,060] INFO [54919-140515706677056] Running envirnoment: development
+[2022-03-04 19:07:53,060] INFO [54919-140515706677056] PyTorch using device: cuda
+[2022-03-04 19:07:55,019] INFO [54919-140515706677056] Application startup complete.
+[2022-03-04 19:08:12,244] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-04 19:08:12,281] INFO [54919-140515706677056] Shutting down
+[2022-03-04 19:08:12,382] INFO [54919-140515706677056] Waiting for application shutdown.
+[2022-03-04 19:08:12,383] INFO [54919-140515706677056] Application shutdown complete.
+[2022-03-04 19:08:12,383] INFO [54919-140515706677056] Finished server process [54919]
+[2022-03-04 19:08:13,629] INFO [55022-139940846585664] Started server process [55022]
+[2022-03-04 19:08:13,629] INFO [55022-139940846585664] Waiting for application startup.
+[2022-03-04 19:08:13,629] INFO [55022-139940846585664] Running envirnoment: development
+[2022-03-04 19:08:13,629] INFO [55022-139940846585664] PyTorch using device: cuda
+[2022-03-04 19:08:15,615] INFO [55022-139940846585664] Application startup complete.
+[2022-03-04 19:08:28,256] INFO [55022-139940846585664] 127.0.0.1:54128 - "POST /prediction HTTP/1.1" 422
+[2022-03-04 19:08:39,662] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-04 19:08:39,700] INFO [55022-139940846585664] Shutting down
+[2022-03-04 19:08:39,801] INFO [55022-139940846585664] Waiting for application shutdown.
+[2022-03-04 19:08:39,802] INFO [55022-139940846585664] Application shutdown complete.
+[2022-03-04 19:08:39,802] INFO [55022-139940846585664] Finished server process [55022]
+[2022-03-04 19:08:41,007] INFO [55172-139725809825600] Started server process [55172]
+[2022-03-04 19:08:41,007] INFO [55172-139725809825600] Waiting for application startup.
+[2022-03-04 19:08:41,008] INFO [55172-139725809825600] Running envirnoment: development
+[2022-03-04 19:08:41,008] INFO [55172-139725809825600] PyTorch using device: cuda
+[2022-03-04 19:08:42,955] INFO [55172-139725809825600] Application startup complete.
+[2022-03-04 19:09:03,233] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-04 19:09:03,327] INFO [55172-139725809825600] Shutting down
+[2022-03-04 19:09:03,427] INFO [55172-139725809825600] Waiting for application shutdown.
+[2022-03-04 19:09:03,428] INFO [55172-139725809825600] Application shutdown complete.
+[2022-03-04 19:09:03,428] INFO [55172-139725809825600] Finished server process [55172]
+[2022-03-04 19:09:04,624] INFO [55250-140606326298432] Started server process [55250]
+[2022-03-04 19:09:04,624] INFO [55250-140606326298432] Waiting for application startup.
+[2022-03-04 19:09:04,624] INFO [55250-140606326298432] Running envirnoment: development
+[2022-03-04 19:09:04,624] INFO [55250-140606326298432] PyTorch using device: cuda
+[2022-03-04 19:09:06,587] INFO [55250-140606326298432] Application startup complete.
+[2022-03-04 19:09:06,589] INFO [55250-140606326298432] 127.0.0.1:54130 - "POST /prediction HTTP/1.1" 422
+[2022-03-04 19:09:11,348] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-04 19:09:11,405] INFO [55250-140606326298432] Shutting down
+[2022-03-04 19:09:11,505] INFO [55250-140606326298432] Waiting for application shutdown.
+[2022-03-04 19:09:11,506] INFO [55250-140606326298432] Application shutdown complete.
+[2022-03-04 19:09:11,506] INFO [55250-140606326298432] Finished server process [55250]
+[2022-03-04 19:09:12,730] INFO [55358-139921729824576] Started server process [55358]
+[2022-03-04 19:09:12,730] INFO [55358-139921729824576] Waiting for application startup.
+[2022-03-04 19:09:12,730] INFO [55358-139921729824576] Running envirnoment: development
+[2022-03-04 19:09:12,730] INFO [55358-139921729824576] PyTorch using device: cuda
+[2022-03-04 19:09:14,644] INFO [55358-139921729824576] Application startup complete.
+[2022-03-04 19:09:14,646] INFO [55358-139921729824576] 127.0.0.1:54132 - "POST /prediction HTTP/1.1" 422
+[2022-03-04 19:09:57,968] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-04 19:09:57,998] INFO [55358-139921729824576] Shutting down
+[2022-03-04 19:09:58,099] INFO [55358-139921729824576] Waiting for application shutdown.
+[2022-03-04 19:09:58,100] INFO [55358-139921729824576] Application shutdown complete.
+[2022-03-04 19:09:58,100] INFO [55358-139921729824576] Finished server process [55358]
+[2022-03-04 19:09:59,301] INFO [55466-139792876771136] Started server process [55466]
+[2022-03-04 19:09:59,302] INFO [55466-139792876771136] Waiting for application startup.
+[2022-03-04 19:09:59,302] INFO [55466-139792876771136] Running envirnoment: development
+[2022-03-04 19:09:59,302] INFO [55466-139792876771136] PyTorch using device: cuda
+[2022-03-04 19:10:01,208] INFO [55466-139792876771136] Application startup complete.
+[2022-03-04 19:10:01,210] INFO [55466-139792876771136] 127.0.0.1:54134 - "POST /prediction HTTP/1.1" 422
+[2022-03-04 19:13:27,607] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-04 19:13:27,640] INFO [55466-139792876771136] Shutting down
+[2022-03-04 19:13:27,740] INFO [55466-139792876771136] Waiting for application shutdown.
+[2022-03-04 19:13:27,741] INFO [55466-139792876771136] Application shutdown complete.
+[2022-03-04 19:13:27,741] INFO [55466-139792876771136] Finished server process [55466]
+[2022-03-04 19:13:28,941] INFO [55621-139765280315200] Started server process [55621]
+[2022-03-04 19:13:28,941] INFO [55621-139765280315200] Waiting for application startup.
+[2022-03-04 19:13:28,941] INFO [55621-139765280315200] Running envirnoment: development
+[2022-03-04 19:13:28,941] INFO [55621-139765280315200] PyTorch using device: cuda
+[2022-03-04 19:13:30,922] INFO [55621-139765280315200] Application startup complete.
+[2022-03-04 19:13:35,200] INFO [55621-139765280315200] 127.0.0.1:54136 - "POST /prediction HTTP/1.1" 422
+[2022-03-04 19:16:43,837] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/test_api.py'. Reloading...
+[2022-03-04 19:16:43,900] INFO [55621-139765280315200] Shutting down
+[2022-03-04 19:16:44,001] INFO [55621-139765280315200] Waiting for application shutdown.
+[2022-03-04 19:16:44,002] INFO [55621-139765280315200] Application shutdown complete.
+[2022-03-04 19:16:44,002] INFO [55621-139765280315200] Finished server process [55621]
+[2022-03-04 19:16:45,253] INFO [55828-140039707666240] Started server process [55828]
+[2022-03-04 19:16:45,253] INFO [55828-140039707666240] Waiting for application startup.
+[2022-03-04 19:16:45,254] INFO [55828-140039707666240] Running envirnoment: development
+[2022-03-04 19:16:45,254] INFO [55828-140039707666240] PyTorch using device: cuda
+[2022-03-04 19:16:47,166] INFO [55828-140039707666240] Application startup complete.
+[2022-03-04 19:17:56,875] WARNING [49013-139761149351744] StatReload detected file change in 'app/tests/test_api.py'. Reloading...
+[2022-03-04 19:17:56,901] INFO [55828-140039707666240] Shutting down
+[2022-03-04 19:17:57,002] INFO [55828-140039707666240] Waiting for application shutdown.
+[2022-03-04 19:17:57,003] INFO [55828-140039707666240] Application shutdown complete.
+[2022-03-04 19:17:57,003] INFO [55828-140039707666240] Finished server process [55828]
+[2022-03-04 19:18:00,618] INFO [56125-140689460553536] Started server process [56125]
+[2022-03-04 19:18:00,618] INFO [56125-140689460553536] Waiting for application startup.
+[2022-03-04 19:18:00,618] INFO [56125-140689460553536] Running envirnoment: development
+[2022-03-04 19:18:00,619] INFO [56125-140689460553536] PyTorch using device: cuda
+[2022-03-04 19:18:08,726] INFO [56125-140689460553536] Application startup complete.
+[2022-03-04 19:27:33,159] WARNING [49013-139761149351744] StatReload detected file change in 'app/models.py'. Reloading...
+[2022-03-04 19:27:33,194] INFO [56125-140689460553536] Shutting down
+[2022-03-04 19:27:33,295] INFO [56125-140689460553536] Waiting for application shutdown.
+[2022-03-04 19:27:33,295] INFO [56125-140689460553536] Application shutdown complete.
+[2022-03-04 19:27:33,295] INFO [56125-140689460553536] Finished server process [56125]
+[2022-03-04 19:27:36,709] INFO [56766-140651821098816] Started server process [56766]
+[2022-03-04 19:27:36,709] INFO [56766-140651821098816] Waiting for application startup.
+[2022-03-04 19:27:36,709] INFO [56766-140651821098816] Running envirnoment: development
+[2022-03-04 19:27:36,709] INFO [56766-140651821098816] PyTorch using device: cuda
+[2022-03-04 19:27:44,790] INFO [56766-140651821098816] Application startup complete.
+[2022-03-04 19:28:55,208] WARNING [49013-139761149351744] StatReload detected file change in 'app/models.py'. Reloading...
+[2022-03-04 19:28:55,227] INFO [56766-140651821098816] Shutting down
+[2022-03-04 19:28:55,328] INFO [56766-140651821098816] Waiting for application shutdown.
+[2022-03-04 19:28:55,328] INFO [56766-140651821098816] Application shutdown complete.
+[2022-03-04 19:28:55,329] INFO [56766-140651821098816] Finished server process [56766]
+[2022-03-04 19:28:59,069] INFO [56947-139713530230592] Started server process [56947]
+[2022-03-04 19:28:59,069] INFO [56947-139713530230592] Waiting for application startup.
+[2022-03-04 19:28:59,070] INFO [56947-139713530230592] Running envirnoment: development
+[2022-03-04 19:28:59,070] INFO [56947-139713530230592] PyTorch using device: cuda
+[2022-03-04 19:29:07,113] INFO [56947-139713530230592] Application startup complete.
+[2022-03-04 19:29:15,075] INFO [56947-139713530230592] 127.0.0.1:54138 - "POST /prediction HTTP/1.1" 200
+[2022-03-04 19:30:55,064] INFO [56947-139713530230592] 127.0.0.1:54140 - "POST /prediction HTTP/1.1" 200
+[2022-03-08 19:02:06,768] INFO [93759-139718784849728] Will watch for changes in these directories: ['/home/dalai/repos/overweight-dogs']
+[2022-03-08 19:02:06,768] INFO [93759-139718784849728] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2022-03-08 19:02:06,768] INFO [93759-139718784849728] Started reloader process [93759] using statreload
+[2022-03-08 19:02:10,980] INFO [93761-140613671163712] Started server process [93761]
+[2022-03-08 19:02:10,980] INFO [93761-140613671163712] Waiting for application startup.
+[2022-03-08 19:02:10,980] INFO [93761-140613671163712] Running envirnoment: development
+[2022-03-08 19:02:10,980] INFO [93761-140613671163712] PyTorch using device: cuda
+[2022-03-08 19:02:19,277] INFO [93761-140613671163712] Application startup complete.
+[2022-03-08 19:20:50,451] INFO [93761-140613671163712] 127.0.0.1:58972 - "POST /prediction HTTP/1.1" 422
+[2022-03-08 19:21:34,524] WARNING [93759-139718784849728] StatReload detected file change in 'app/app.py'. Reloading...
+[2022-03-08 19:21:34,589] INFO [93761-140613671163712] Shutting down
+[2022-03-08 19:21:34,690] INFO [93761-140613671163712] Waiting for application shutdown.
+[2022-03-08 19:21:34,690] INFO [93761-140613671163712] Application shutdown complete.
+[2022-03-08 19:21:34,690] INFO [93761-140613671163712] Finished server process [93761]
+[2022-03-08 19:21:37,111] INFO [94922-140259573053248] Started server process [94922]
+[2022-03-08 19:21:37,111] INFO [94922-140259573053248] Waiting for application startup.
+[2022-03-08 19:21:37,112] INFO [94922-140259573053248] Running envirnoment: development
+[2022-03-08 19:21:37,112] INFO [94922-140259573053248] PyTorch using device: cuda
+[2022-03-08 19:21:39,114] INFO [94922-140259573053248] Application startup complete.
+[2022-03-08 19:21:46,506] INFO [94922-140259573053248] 127.0.0.1:58976 - "POST /prediction HTTP/1.1" 422
+[2022-03-08 19:22:04,170] WARNING [93759-139718784849728] StatReload detected file change in 'app/app.py'. Reloading...
+[2022-03-08 19:22:04,209] INFO [94922-140259573053248] Shutting down
+[2022-03-08 19:22:04,309] INFO [94922-140259573053248] Waiting for application shutdown.
+[2022-03-08 19:22:04,309] INFO [94922-140259573053248] Application shutdown complete.
+[2022-03-08 19:22:04,310] INFO [94922-140259573053248] Finished server process [94922]
+[2022-03-08 19:22:05,453] INFO [95030-139745260746560] Started server process [95030]
+[2022-03-08 19:22:05,453] INFO [95030-139745260746560] Waiting for application startup.
+[2022-03-08 19:22:05,453] INFO [95030-139745260746560] Running envirnoment: development
+[2022-03-08 19:22:05,453] INFO [95030-139745260746560] PyTorch using device: cuda
+[2022-03-08 19:22:07,309] INFO [95030-139745260746560] Application startup complete.
+[2022-03-08 19:24:12,492] INFO [95030-139745260746560] 127.0.0.1:58978 - "POST /prediction HTTP/1.1" 422
+[2022-03-08 19:34:00,748] WARNING [93759-139718784849728] StatReload detected file change in 'app/app.py'. Reloading...
+[2022-03-08 19:34:00,750] INFO [95030-139745260746560] Shutting down
+[2022-03-08 19:34:00,851] INFO [95030-139745260746560] Waiting for application shutdown.
+[2022-03-08 19:34:00,852] INFO [95030-139745260746560] Application shutdown complete.
+[2022-03-08 19:34:00,852] INFO [95030-139745260746560] Finished server process [95030]
+[2022-03-08 19:34:02,104] INFO [95744-140121423468352] Started server process [95744]
+[2022-03-08 19:34:02,105] INFO [95744-140121423468352] Waiting for application startup.
+[2022-03-08 19:34:02,105] INFO [95744-140121423468352] Running envirnoment: development
+[2022-03-08 19:34:02,105] INFO [95744-140121423468352] PyTorch using device: cuda
+[2022-03-08 19:34:04,222] INFO [95744-140121423468352] Application startup complete.
+[2022-03-08 19:34:06,969] INFO [95744-140121423468352] 127.0.0.1:58980 - "POST /prediction HTTP/1.1" 422
+[2022-03-08 19:34:29,336] INFO [95744-140121423468352] 127.0.0.1:58982 - "POST /prediction HTTP/1.1" 200
+[2022-03-08 19:35:03,890] WARNING [93759-139718784849728] StatReload detected file change in 'app/tests/trying_upload.py'. Reloading...
+[2022-03-08 19:35:03,971] INFO [95744-140121423468352] Shutting down
+[2022-03-08 19:35:04,072] INFO [95744-140121423468352] Waiting for application shutdown.
+[2022-03-08 19:35:04,072] INFO [95744-140121423468352] Application shutdown complete.
+[2022-03-08 19:35:04,073] INFO [95744-140121423468352] Finished server process [95744]
+[2022-03-08 19:35:05,229] INFO [95907-140255544436544] Started server process [95907]
+[2022-03-08 19:35:05,229] INFO [95907-140255544436544] Waiting for application startup.
+[2022-03-08 19:35:05,230] INFO [95907-140255544436544] Running envirnoment: development
+[2022-03-08 19:35:05,230] INFO [95907-140255544436544] PyTorch using device: cuda
+[2022-03-08 19:35:07,173] INFO [95907-140255544436544] Application startup complete.
+[2022-03-08 19:35:22,177] INFO [95907-140255544436544] 127.0.0.1:58984 - "POST /prediction HTTP/1.1" 200
+[2022-03-08 19:35:34,808] WARNING [93759-139718784849728] StatReload detected file change in 'app/tests/test_api.py'. Reloading...
+[2022-03-08 19:35:34,871] INFO [95907-140255544436544] Shutting down
+[2022-03-08 19:35:34,972] INFO [95907-140255544436544] Waiting for application shutdown.
+[2022-03-08 19:35:34,972] INFO [95907-140255544436544] Application shutdown complete.
+[2022-03-08 19:35:34,973] INFO [95907-140255544436544] Finished server process [95907]
+[2022-03-08 19:35:36,147] INFO [96082-139887327602496] Started server process [96082]
+[2022-03-08 19:35:36,148] INFO [96082-139887327602496] Waiting for application startup.
+[2022-03-08 19:35:36,148] INFO [96082-139887327602496] Running envirnoment: development
+[2022-03-08 19:35:36,148] INFO [96082-139887327602496] PyTorch using device: cuda
+[2022-03-08 19:35:38,124] INFO [96082-139887327602496] Application startup complete.
+[2022-03-08 19:35:50,606] WARNING [93759-139718784849728] StatReload detected file change in 'app/tests/test_api.py'. Reloading...
+[2022-03-08 19:35:50,669] INFO [96082-139887327602496] Shutting down
+[2022-03-08 19:35:50,770] INFO [96082-139887327602496] Waiting for application shutdown.
+[2022-03-08 19:35:50,770] INFO [96082-139887327602496] Application shutdown complete.
+[2022-03-08 19:35:50,771] INFO [96082-139887327602496] Finished server process [96082]
+[2022-03-08 19:35:52,026] INFO [96156-139649429108544] Started server process [96156]
+[2022-03-08 19:35:52,026] INFO [96156-139649429108544] Waiting for application startup.
+[2022-03-08 19:35:52,026] INFO [96156-139649429108544] Running envirnoment: development
+[2022-03-08 19:35:52,026] INFO [96156-139649429108544] PyTorch using device: cuda
+[2022-03-08 19:35:54,116] INFO [96156-139649429108544] Application startup complete.
+[2022-03-08 19:37:00,146] WARNING [93759-139718784849728] StatReload detected file change in 'app/tests/test_api.py'. Reloading...
+[2022-03-08 19:37:00,151] INFO [96156-139649429108544] Shutting down
+[2022-03-08 19:37:00,252] INFO [96156-139649429108544] Waiting for application shutdown.
+[2022-03-08 19:37:00,253] INFO [96156-139649429108544] Application shutdown complete.
+[2022-03-08 19:37:00,253] INFO [96156-139649429108544] Finished server process [96156]
+[2022-03-08 19:37:03,591] INFO [96343-140133568837440] Started server process [96343]
+[2022-03-08 19:37:03,591] INFO [96343-140133568837440] Waiting for application startup.
+[2022-03-08 19:37:03,591] INFO [96343-140133568837440] Running envirnoment: development
+[2022-03-08 19:37:03,591] INFO [96343-140133568837440] PyTorch using device: cuda
+[2022-03-08 19:37:06,233] INFO [96343-140133568837440] Application startup complete.
+[2022-03-08 19:37:43,345] WARNING [93759-139718784849728] StatReload detected file change in 'app/tests/test_api.py'. Reloading...
+[2022-03-08 19:37:43,372] INFO [96343-140133568837440] Shutting down
+[2022-03-08 19:37:43,472] INFO [96343-140133568837440] Waiting for application shutdown.
+[2022-03-08 19:37:43,473] INFO [96343-140133568837440] Application shutdown complete.
+[2022-03-08 19:37:43,473] INFO [96343-140133568837440] Finished server process [96343]
+[2022-03-08 19:37:44,762] INFO [96528-140458702542656] Started server process [96528]
+[2022-03-08 19:37:44,762] INFO [96528-140458702542656] Waiting for application startup.
+[2022-03-08 19:37:44,762] INFO [96528-140458702542656] Running envirnoment: development
+[2022-03-08 19:37:44,762] INFO [96528-140458702542656] PyTorch using device: cuda
+[2022-03-08 19:37:46,697] INFO [96528-140458702542656] Application startup complete.
+[2022-03-08 19:38:44,732] WARNING [93759-139718784849728] StatReload detected file change in 'app/tests/test_api.py'. Reloading...
+[2022-03-08 19:38:44,809] INFO [96528-140458702542656] Shutting down
+[2022-03-08 19:38:44,910] INFO [96528-140458702542656] Waiting for application shutdown.
+[2022-03-08 19:38:44,910] INFO [96528-140458702542656] Application shutdown complete.
+[2022-03-08 19:38:44,910] INFO [96528-140458702542656] Finished server process [96528]
+[2022-03-08 19:38:46,187] INFO [96669-139687725102912] Started server process [96669]
+[2022-03-08 19:38:46,187] INFO [96669-139687725102912] Waiting for application startup.
+[2022-03-08 19:38:46,187] INFO [96669-139687725102912] Running envirnoment: development
+[2022-03-08 19:38:46,187] INFO [96669-139687725102912] PyTorch using device: cuda
+[2022-03-08 19:38:48,061] INFO [96669-139687725102912] Application startup complete.
+[2022-03-08 19:38:57,884] WARNING [93759-139718784849728] StatReload detected file change in 'app/tests/test_api.py'. Reloading...
+[2022-03-08 19:38:57,891] INFO [96669-139687725102912] Shutting down
+[2022-03-08 19:38:57,992] INFO [96669-139687725102912] Waiting for application shutdown.
+[2022-03-08 19:38:57,993] INFO [96669-139687725102912] Application shutdown complete.
+[2022-03-08 19:38:57,993] INFO [96669-139687725102912] Finished server process [96669]
+[2022-03-08 19:38:59,334] INFO [96812-140227634607936] Started server process [96812]
+[2022-03-08 19:38:59,334] INFO [96812-140227634607936] Waiting for application startup.
+[2022-03-08 19:38:59,335] INFO [96812-140227634607936] Running envirnoment: development
+[2022-03-08 19:38:59,335] INFO [96812-140227634607936] PyTorch using device: cuda
+[2022-03-08 19:39:01,321] INFO [96812-140227634607936] Application startup complete.
+[2022-03-08 19:39:20,538] WARNING [93759-139718784849728] StatReload detected file change in 'app/tests/test_api.py'. Reloading...
+[2022-03-08 19:39:20,585] INFO [96812-140227634607936] Shutting down
+[2022-03-08 19:39:20,686] INFO [96812-140227634607936] Waiting for application shutdown.
+[2022-03-08 19:39:20,687] INFO [96812-140227634607936] Application shutdown complete.
+[2022-03-08 19:39:20,687] INFO [96812-140227634607936] Finished server process [96812]
+[2022-03-08 19:39:21,852] INFO [96972-140295021598528] Started server process [96972]
+[2022-03-08 19:39:21,852] INFO [96972-140295021598528] Waiting for application startup.
+[2022-03-08 19:39:21,852] INFO [96972-140295021598528] Running envirnoment: development
+[2022-03-08 19:39:21,852] INFO [96972-140295021598528] PyTorch using device: cuda
+[2022-03-08 19:39:23,813] INFO [96972-140295021598528] Application startup complete.

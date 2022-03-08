@@ -30,13 +30,13 @@ class EfficientNetClassifier:
         self.targets = targets
 
     @classmethod
-    def transform_image(cls, raw_image):
+    def transform_image(cls, image_bytes):
         transforms = T.Compose([
             T.Resize(size=(224, 224)),
             T.ToTensor(),
             T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         ])
-        image = Image.open(io.BytesIO(raw_image))
+        image = Image.open(io.BytesIO(image_bytes))
         return transforms(image).unsqueeze(0)
 
     def load_model(self):
@@ -47,7 +47,8 @@ class EfficientNetClassifier:
         self.model.eval()
 
     def get_classification(self, raw_image: UploadFile) -> PredictionOutput:
-        image_tensor = self.transform_image(raw_image.file.read())
+        # image_tensor = self.transform_image(raw_image.file.read())
+        image_tensor = self.transform_image(raw_image)
 
         output = self.model(image_tensor)
         print("Output: ", output)
