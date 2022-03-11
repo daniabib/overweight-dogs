@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export JOB_NAME="ml-project1"
+export JOB_NAME="ml-project10"
 export IMAGE="ml/project1"
 export TAG="latest"
 export PYTHON_ENV="development"
