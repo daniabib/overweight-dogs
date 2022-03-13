@@ -1,4 +1,7 @@
-FROM nvidia/cuda:11.6.0-runtime-ubuntu20.04
+## For CPU version uncomment next RUN statement
+# FROM nvidia/cuda:11.6.0-runtime-ubuntu20.04
+
+FROM tiangolo/uvicorn-gunicorn:python3.8
 
 # install utilities
 RUN apt-get update && \
@@ -17,7 +20,11 @@ RUN python3 -m pip --no-cache-dir install --upgrade pip && \
     python3 --version && \
     pip3 --version
 
-RUN pip3 --timeout=300 --no-cache-dir install torch==1.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+## For GPU version uncomment next RUN statement
+# RUN pip3 --timeout=300 --no-cache-dir install torch==1.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+
+RUN pip3 --timeout=300 --no-cache-dir install torch==1.10.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
+
 
 COPY ./requirements.txt .
 RUN pip3 --timeout=300 --no-cache-dir install -r requirements.txt
