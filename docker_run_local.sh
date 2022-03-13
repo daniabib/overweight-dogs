@@ -1,13 +1,13 @@
 #!/bin/bash
 
-export JOB_NAME="ml-project1"
-export IMAGE="ml/project1"
+export JOB_NAME="ovw-dogs"
+export IMAGE="ovw-dogs-image"
 export TAG="latest"
 export PYTHON_ENV="development"
 export API_PORT=8080
 export WORKERS=2
 export TIMEOUT=300
-export LOG_FOLDER=/var/log/ml-project1
+export LOG_FOLDER=/var/log/ovw-dogs
 
 echo ${IMAGE}:${TAG}
 

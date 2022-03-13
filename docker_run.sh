@@ -1,13 +1,13 @@
 #!/bin/bash
 
-export JOB_NAME="ml-project1"
-export IMAGE="ml/project1"
+export JOB_NAME="ovw-dogs"
+export IMAGE="ovw-dogs-image"
 export TAG="latest"
 export PYTHON_ENV="development"
 export API_PORT=8080
 export WORKERS=2
 export TIMEOUT=300
-export LOG_FOLDER=/var/log/ml-project1
+export LOG_FOLDER=/var/log/ovw-dogs
 
 echo ${IMAGE}:${TAG}
 
@@ -19,7 +19,7 @@ fi
 # Add your authentication command for the docker image registry here
 
 # force pull and update the image, use this in remote host only
-docker pull ${IMAGE}:${TAG}
+# docker pull ${IMAGE}:${TAG}
 
 # stop running container with same job name, if any
 if [ "$(docker ps -a | grep $JOB_NAME)" ]; then
@@ -29,7 +29,8 @@ fi
 # start docker container
 docker run -d \
   --rm \
-  --gpus all \
+  ## Uncommment next line for GPU support
+  # --gpus all \
   -p ${API_PORT}:80 \
   -e "WORKERS=${WORKERS}" \
   -e "TIMEOUT=${TIMEOUT}" \
