@@ -8,8 +8,11 @@ import torch
 import torchvision.transforms as T
 from efficientnet_pytorch import EfficientNet
 
-from app.config import CONFIG
-from model.model import build_efficientnet
+# from app.config import CONFIG
+# from model.model import build_efficientnet
+
+from config import CONFIG
+from build_model import build_efficientnet
 
 
 class PredictionInput(BaseModel):

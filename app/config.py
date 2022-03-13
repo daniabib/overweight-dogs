@@ -4,7 +4,7 @@ import torch
 
 # Config that serves all environment
 GLOBAL_CONFIG = {
-    "MODEL_PATH": "model/model.pt",
+    "MODEL_PATH": "../model/model.pt",
     "USE_CUDE_IF_AVAILABLE": True,
     "ROUND_DIGIT": 6
 }
