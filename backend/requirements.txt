@@ -4,7 +4,7 @@ fastapi
 pydantic
 pandas
 numpy
-torch
+# torch
 torchvision
 torchsummary
 efficientnet_pytorch
