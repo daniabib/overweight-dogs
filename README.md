@@ -25,10 +25,6 @@ Then you need to build and run the Docker image:
 $ chmod +x ./docker_build.sh
 $ ./docker_build.sh
 
-# Build the image
-$ chmod +x ./docker_build.sh
-$ ./docker_build.sh
-
 # Run the image
 $ chmod +x ./docker_run_local.sh
 $ ./docker_run_local.sh
