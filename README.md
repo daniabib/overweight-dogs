@@ -49,6 +49,9 @@ server: uvicorn
     "category": "overweight"
 }
 ```
+## Things I'm still implementing 
+- A simple Vue.js frontend.
+- A docker-compose pipeline to simplify deployment on AWS.
 
 ## Support
 
