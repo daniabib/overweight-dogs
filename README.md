@@ -46,7 +46,7 @@ server: uvicorn
 }
 ```
 ## Things I'm still implementing 
-- ~~A simple Streamlit frontend.~~
+- ~~A simple Streamlit frontend.~~ ✅
 - A docker-compose pipeline to simplify deployment on AWS.
 
 ## Support

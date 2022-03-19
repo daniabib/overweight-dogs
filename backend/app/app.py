@@ -2,10 +2,6 @@ from fastapi import FastAPI, UploadFile, Depends
 from fastapi.logger import logger
 from fastapi.exceptions import RequestValidationError
 
-# from app.config import CONFIG
-# from app.models import EfficientNetClassifier, PredictionOutput
-# from app.exception_handler import validation_exception_handler, python_exception_handler
-
 from config import CONFIG
 from models import EfficientNetClassifier, PredictionOutput
 from exception_handler import validation_exception_handler, python_exception_handler
@@ -47,13 +43,9 @@ async def get_classification(raw_image: UploadFile) -> PredictionOutput:
     category = model.targets[predicted_class]
     return PredictionOutput(category=category)
 
-# @app.get("/")
-# async def get_home():
-#     return {"message": "This is the API home."}
 
 @app.post("/prediction")
 async def prediction(
     output: PredictionOutput = Depends(get_classification)
 ) -> PredictionOutput:
     return output
-

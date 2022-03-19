@@ -2,7 +2,6 @@ import requests
 
 import streamlit as st
 
-# interact with backend endpoint
 BACKEND = "http://backend:8080/prediction"
 SUPPORTED_TYPES = ['png', 'jpg', 'jpeg', 'bmp', 'gif', 'tga', 'tiff']
 
@@ -27,13 +26,11 @@ st.write(
 input_image = st.file_uploader(
     "insert image", type=SUPPORTED_TYPES)  # image upload widget
 
-if st.button("Upload your dog image:"):
+if st.button("Upload your dog image"):
 
     if input_image:
         st.image(input_image, caption='Uploaded Image.',
                  use_column_width=True)
-        st.write("")
-        st.write("Classifying...")
         st.write("")
         classification = process(input_image, BACKEND)
         st.write(f"Your dog seens {classification}.")
