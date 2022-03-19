@@ -24,7 +24,7 @@ Then you need to build and run the Docker image:
 # Build and run the image
 $ docker-compose up -d --build
 ```
-The Streamlit frontend will be avaiable at http://localhost:8051.
+The Streamlit frontend will be avaiable at http://localhost:8501.
 
 To test the model you can use the FastAPI documentation page. It will be avaiable on http://0.0.0.0:8080/docs.
 
