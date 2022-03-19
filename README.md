@@ -5,7 +5,7 @@ The dataset was built scraping Bing Image for terms like "overweight dogs", "obe
 The dataset is composed of 5400 images already randomly split into train, validation, and test folders.
 It can be downloaded here: https://drive.google.com/file/d/1uFDfpyCkMxzdz2Mez5zUBJJHBkh_OJjq/view?usp=sharing
 
-The model is integrated with FastAPI, and can be accessed on the /prediction endpoint. It is already deployable via Docker and has GPU support if needed.
+A simple Streamlit was built to simplify the use of the model by clients. The model is integrated with FastAPI, and can be accessed on the /prediction endpoint. It is already deployable via Docker and has GPU support if needed.
 
 ## How To Use
 
@@ -21,14 +21,10 @@ $ cd overweight-dogs
 
 Then you need to build and run the Docker image:
 ```bash
-# Build the image
-$ chmod +x ./docker_build.sh
-$ ./docker_build.sh
-
-# Run the image
-$ chmod +x ./docker_run_local.sh
-$ ./docker_run_local.sh
+# Build and run the image
+$ docker-compose up -d --build
 ```
+The Streamlit frontend will be avaiable at http://localhost:8051.
 
 To test the model you can use the FastAPI documentation page. It will be avaiable on http://0.0.0.0:8080/docs.
 
@@ -50,7 +46,7 @@ server: uvicorn
 }
 ```
 ## Things I'm still implementing 
-- A simple Vue.js frontend.
+- ~~A simple Streamlit frontend.
 - A docker-compose pipeline to simplify deployment on AWS.
 
 ## Support
