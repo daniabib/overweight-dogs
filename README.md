@@ -7,6 +7,8 @@ It can be downloaded here: https://drive.google.com/file/d/1uFDfpyCkMxzdz2Mez5zU
 
 A simple Streamlit was built to simplify the use of the model by clients. The model is integrated with FastAPI, and can be accessed on the /prediction endpoint. It is already deployable via Docker and has GPU support if needed.
 
+The application is also already deployable on AWS ECS.
+
 ## How To Use
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Docker](https://docs.docker.com/get-docker/):
@@ -47,7 +49,7 @@ server: uvicorn
 ```
 ## Things I'm still implementing 
 - ~~A simple Streamlit frontend.~~ ✅
-- A docker-compose pipeline to simplify deployment on AWS.
+- ~~A docker-compose pipeline to simplify deployment on AWS ECS.~~ ✅
 
 ## Support
 
