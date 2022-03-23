@@ -2,11 +2,13 @@ from fastapi import FastAPI, UploadFile, Depends
 from fastapi.logger import logger
 from fastapi.exceptions import RequestValidationError
 
+import torch
+
+import uvicorn
+
 from config import CONFIG
 from models import EfficientNetClassifier, PredictionOutput
 from exception_handler import validation_exception_handler, python_exception_handler
-
-import torch
 
 
 CLASS_NAMES = ["fit", "overweight"]
@@ -49,3 +51,6 @@ async def prediction(
     output: PredictionOutput = Depends(get_classification)
 ) -> PredictionOutput:
     return output
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8080)
