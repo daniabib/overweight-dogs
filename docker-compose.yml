@@ -20,6 +20,8 @@ services:
     networks:
       - deploy_network
     container_name: frontend
+    volumes:
+    - $HOME/.aws/credentials:/root/.aws/credentials:ro
 
 networks:
   deploy_network:
