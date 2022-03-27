@@ -1,11 +1,16 @@
 # Overweight Dogs Image Classifier
+
+Here is a [LIVE DEMO](http://ec2-18-234-175-38.compute-1.amazonaws.com:8501/) that you can try.
+
 A simple example of a PyTorch image classifier to classify images of overweight dogs. The model is a pretrained EfficientNet-B0 with a custom classify layer on top.
 
 The dataset was built scraping Bing Image for terms like "overweight dogs", "obese dogs" and similars. I also wrote some scripts to extract frames of videos containing overweighted dogs to achieve a more robust dataset.
 The dataset is composed of 5400 images already randomly split into train, validation, and test folders.
 It can be downloaded here: https://drive.google.com/file/d/1uFDfpyCkMxzdz2Mez5zUBJJHBkh_OJjq/view?usp=sharing
 
-A simple Streamlit was built to simplify the use of the model by clients. The model is integrated with FastAPI, and can be accessed on the /prediction endpoint. It is already deployable via Docker and has GPU support if needed.
+Just for the sake of completeness (and fun!) I added an API call to the AWS Rekognition Label Detection service, so our model is called only when a dog is in the picture. That way our application can function as an object detector too.
+
+A simple Streamlit frontend was built to simplify the use of the model by clients. The model is integrated with FastAPI, and can be accessed on the /prediction endpoint. It is already deployable via Docker and has GPU support if needed.
 
 The application is also already deployable on AWS ECS.
 
@@ -51,9 +56,9 @@ server: uvicorn
 - ~~A simple Streamlit frontend.~~ ✅
 - ~~A docker-compose pipeline to simplify deployment on AWS ECS.~~ ✅
 
-## Support
+<!-- ## Support
 
-<a href="https://www.buymeacoffee.com/danielabib?" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<a href="https://www.buymeacoffee.com/danielabib?" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a> -->
 
 
 ## Disclaimer
