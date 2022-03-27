@@ -5,6 +5,8 @@ import boto3
 
 
 def detect_labels_rekognition(image: bytes) -> Tuple[bool, str, float]:
+    MIN_CONFIDENCE = 90
+
     client = boto3.client("rekognition")
 
     response = client.detect_labels(Image={"Bytes": image})
@@ -35,7 +37,7 @@ def detect_labels_rekognition(image: bytes) -> Tuple[bool, str, float]:
         print("----------")
         print()
 
-        if label["Name"] == "Dog":
+        if label["Name"] == "Dog" and label["Confidence"] > MIN_CONFIDENCE:
             is_dog = True
             detected_label = label["Name"]
             confidence = label["Confidence"]
