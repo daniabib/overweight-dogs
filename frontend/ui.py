@@ -31,7 +31,7 @@ if st.button("Upload your dog image"):
 
         if is_dog:
             classification = classify_dogs(output_image, BACKEND)
-            st.header(f"Your dog seens {classification}.")
+            st.header(f"Your dog seems {classification}.")
         else:
             st.subheader(
                 f"Are you sure it's a dog? It seems more like {rekognition_string_process(detected_label)}.")

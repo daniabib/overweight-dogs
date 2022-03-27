@@ -1,9 +1,10 @@
+from typing import Tuple
 import requests
 
 import boto3
 
 
-def detect_labels_rekognition(image):
+def detect_labels_rekognition(image: bytes) -> Tuple[bool, str, float]:
     client = boto3.client("rekognition")
 
     response = client.detect_labels(Image={"Bytes": image})
@@ -56,7 +57,7 @@ def classify_dogs(image: bytes, server_url: str) -> str:
     return r.json()["category"]
 
 
-def rekognition_string_process(detected_label):
+def rekognition_string_process(detected_label: str) -> str:
     an_rule = ["a", "e", "i", "o", "u"]
 
     return f"an {detected_label.lower()}" if detected_label.lower()[0] in an_rule \
