@@ -1,5 +1,7 @@
 # Overweight Dogs Image Classifier
 
+![Ovwscreen](imgs/app-screencap.gif)
+
 A simple example of a PyTorch image classifier to classify images of overweight dogs. The model is a pretrained EfficientNet-B0 with a custom classify layer on top.
 
 The dataset was built scraping Bing Image for terms like "overweight dogs", "obese dogs" and similars. I also wrote some scripts to extract frames of videos containing overweighted dogs to achieve a more robust dataset.
