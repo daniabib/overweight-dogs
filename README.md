@@ -60,6 +60,10 @@ server: uvicorn
 
 <a href="https://www.buymeacoffee.com/danielabib?" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a> -->
 
-
+## References
+For this code, I used a variety of sources, but mainly these:
+- The book [Building Data Science Applications with FastAPI](https://www.oreilly.com/library/view/building-data-science/9781801079211/), by François Voron.
+- [Machine learning model serving in Python using FastAPI and streamlit](https://davidefiocco.github.io/streamlit-fastapi-ml-serving/), by Davide Fiocco.
+- [Deploying PyTorch Model to Production with FastAPI in CUDA-supported Docker](https://medium.com/@mingc.me/deploying-pytorch-model-to-production-with-fastapi-in-cuda-supported-docker-c161cca68bb8), by Ming Choi.
 ## Disclaimer
 This repository is just an exercise on deep learning, computer vision, and model deployment. It has no intention of having any scientific validation. Please, use it only as a code example.
